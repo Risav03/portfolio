@@ -3,7 +3,7 @@
 import Image from "next/image"
 import mypic from "@/assets/me.png"
 import mypic2 from "@/assets/me.jpeg"
-import { FaEthereum, FaSquareXTwitter } from "react-icons/fa6";
+import { FaEthereum, FaSquareXTwitter, FaVideo } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaGithub } from "react-icons/fa6";
@@ -65,13 +65,7 @@ export default function Intro(){
                     {/* <h3 className="text-[3rem] h-20 flex gap-1 items-end font-semibold bg-gradient-to-br from-green-500 to-emerald-500 text-transparent bg-clip-text">{work} <span className="h-2 w-10 -translate-y-4 bg-white animate-pulse"></span></h3> */}
                 </div>
                 
-                {/* <FloatingIcons className=" absolute z-50 top-[15rem] left-[6rem] rotate-[20deg] "><CiGlobe className="text-green-500" /></FloatingIcons>
-                <FloatingIcons className=" absolute z-50 top-[30rem] left-[8rem] rotate-[-10deg] "><FaEthereum className="text-emerald-500" /></FloatingIcons>
-                <FloatingIcons className=" absolute z-50 top-[25rem] right-[8rem] rotate-[-10deg] "><SiBlender className="text-emerald-500" /></FloatingIcons>
-                <FloatingBoxes className=" max-2xl:top-[10rem] 2xl:top-[30rem] z-50 max-2xl:right-[13rem] 2xl:right-[42rem] absolute font-bold max-2xl:text-2xl 2xl:text-3xl " >Web Developer</FloatingBoxes>
-                <FloatingBoxes className=" max-2xl:top-[25rem] 2xl:top-[80rem] z-50 max-2xl:left-[13rem] 2xl:left-[23rem] absolute font-bold max-2xl:text-xl 2xl:text-2xl " >Smart Contracts</FloatingBoxes>
-                <FloatingBoxes className=" max-2xl:top-[33rem] 2xl:top-[85rem] z-50 max-2xl:right-[13rem] 2xl:right-[27rem] absolute font-bold max-2xl:text-xl 2xl:text-2xl  " >3D Artist</FloatingBoxes>
-                <FloatingBoxes className=" top-[12rem] z-50 left-[13rem] absolute font-bold text-2xl " >Video Editor</FloatingBoxes> */}
+                
 
                 <div className="absolute bottom-0 ">
                     <div className="relative top-40">
@@ -81,6 +75,16 @@ export default function Intro(){
                         </div>
                         <div className="absolute z-[2] max-2xl:-top-[10rem] 2xl:-top-[12rem] max-2xl:-left-[10rem] 2xl:-left-[12rem] rounded-full max-2xl:w-[60rem] max-2xl:h-[60rem] 2xl:w-[70rem] 2xl:h-[70rem] border-4 border-green-500 border-dashed">
                         </div>
+
+                        <FloatingIcons className=" absolute z-50 -top-[2rem] left-[3rem] rotate-[20deg] "><FaEthereum className="text-emerald-500" /></FloatingIcons>
+                        <FloatingIcons className=" absolute z-50 -top-[5rem] right-[6rem] rotate-[-10deg] "><CiGlobe className="text-green-500" /></FloatingIcons>
+                        <FloatingIcons className=" absolute z-50 top-[18rem] -right-[2rem] rotate-[-10deg] "><SiBlender className="text-emerald-500" /></FloatingIcons>
+                        <FloatingIcons className=" absolute z-50 top-[19rem] -left-[2rem] rotate-[20deg] "><FaVideo className="text-green-500" /></FloatingIcons>
+
+                        <FloatingBoxes className=" top-[0rem] z-50 -right-[10rem] absolute font-bold max-2xl:text-2xl 2xl:text-3xl " >Web Developer</FloatingBoxes>
+                        <FloatingBoxes className=" z-50 top-[4rem] -left-[12rem] absolute font-bold max-2xl:text-xl 2xl:text-2xl " >Smart Contracts</FloatingBoxes>
+                        <FloatingBoxes className=" z-50 top-[20rem] -right-[15rem] absolute font-bold max-2xl:text-xl 2xl:text-2xl  " >3D Artist</FloatingBoxes>
+                        <FloatingBoxes className=" top-[16rem] z-50 -left-[16rem] absolute font-bold text-2xl " >Video Editor</FloatingBoxes>
                     </div>
                     <Image src={mypic} className="max-2xl:w-[40rem] 2xl:w-[45rem] brightness-90 relative z-[5]"/>
                 </div>
