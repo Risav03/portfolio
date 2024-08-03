@@ -60,29 +60,29 @@ export default function Intro(){
     return (
         <>
             <div className="w-screen h-[95vh] max-md:hidden text-white relative md:-left-16 overflow-hidden -left-4 flex flex-col items-center justify-center">
-                <div className="absolute top-0">
+                <div className="absolute max-2xl:top-0 2xl:top-40">
                     <h1 className="text-[5rem] text-gray-400 font-bold">I am <span className="text-white">Risavdeb Patra</span></h1>
                     {/* <h3 className="text-[3rem] h-20 flex gap-1 items-end font-semibold bg-gradient-to-br from-green-500 to-emerald-500 text-transparent bg-clip-text">{work} <span className="h-2 w-10 -translate-y-4 bg-white animate-pulse"></span></h3> */}
                 </div>
                 
-                <FloatingIcons className=" absolute z-50 top-[15rem] left-[6rem] rotate-[20deg] "><CiGlobe className="text-green-500" /></FloatingIcons>
+                {/* <FloatingIcons className=" absolute z-50 top-[15rem] left-[6rem] rotate-[20deg] "><CiGlobe className="text-green-500" /></FloatingIcons>
                 <FloatingIcons className=" absolute z-50 top-[30rem] left-[8rem] rotate-[-10deg] "><FaEthereum className="text-emerald-500" /></FloatingIcons>
                 <FloatingIcons className=" absolute z-50 top-[25rem] right-[8rem] rotate-[-10deg] "><SiBlender className="text-emerald-500" /></FloatingIcons>
-                <FloatingBoxes className=" top-[10rem] z-50 right-[13rem] absolute font-bold text-2xl " >Web Developer</FloatingBoxes>
-                <FloatingBoxes className=" top-[25rem] z-50 left-[13rem] absolute font-bold text-xl " >Smart Contracts</FloatingBoxes>
-                <FloatingBoxes className=" top-[33rem] z-50 right-[13rem] absolute font-bold text-xl  " >3D Artist</FloatingBoxes>
-                <FloatingBoxes className=" top-[12rem] z-50 left-[13rem] absolute font-bold text-2xl " >Video Editor</FloatingBoxes>
+                <FloatingBoxes className=" max-2xl:top-[10rem] 2xl:top-[30rem] z-50 max-2xl:right-[13rem] 2xl:right-[42rem] absolute font-bold max-2xl:text-2xl 2xl:text-3xl " >Web Developer</FloatingBoxes>
+                <FloatingBoxes className=" max-2xl:top-[25rem] 2xl:top-[80rem] z-50 max-2xl:left-[13rem] 2xl:left-[23rem] absolute font-bold max-2xl:text-xl 2xl:text-2xl " >Smart Contracts</FloatingBoxes>
+                <FloatingBoxes className=" max-2xl:top-[33rem] 2xl:top-[85rem] z-50 max-2xl:right-[13rem] 2xl:right-[27rem] absolute font-bold max-2xl:text-xl 2xl:text-2xl  " >3D Artist</FloatingBoxes>
+                <FloatingBoxes className=" top-[12rem] z-50 left-[13rem] absolute font-bold text-2xl " >Video Editor</FloatingBoxes> */}
 
                 <div className="absolute bottom-0 ">
                     <div className="relative top-40">
-                        <div className="absolute z-[0] left-[8rem] rounded-full blur-[150px] bg-gradient-radial from-green-500 to-emerald-500 w-[25rem] h-[25rem]">
+                        <div className="absolute z-[0] left-[8rem] rounded-full blur-[150px] bg-gradient-radial from-green-500 to-emerald-500 max-2xl:w-[25rem] max-2xl:h-[25rem] 2xl:w-[40rem] 2xl:h-[40rem]">
                         </div>
-                        <div className="absolute z-[2] left-[0rem] rounded-full  w-[40rem] h-[40rem] border-4 border-green-500 border-dashed">
+                        <div className="absolute z-[2] left-[0rem] rounded-full max-2xl:w-[40rem] max-2xl:h-[40rem] 2xl:w-[60rem] 2xl:h-[60rem] border-4 border-green-500 border-dashed">
                         </div>
-                        <div className="absolute z-[2] -top-[10rem] -left-[10rem] rounded-full  w-[60rem] h-[60rem] border-4 border-green-500 border-dashed">
+                        <div className="absolute z-[2] max-2xl:-top-[10rem] 2xl:-top-[20rem] max-2xl:-left-[10rem] 2xl:-left-[20rem] rounded-full max-2xl:w-[60rem] max-2xl:h-[60rem] 2xl:w-[100rem] 2xl:h-[100rem] border-4 border-green-500 border-dashed">
                         </div>
                     </div>
-                    <Image src={mypic} className="w-[40rem] brightness-90 relative z-[5]"/>
+                    <Image src={mypic} className="max-2xl:w-[40rem] 2xl:w-[60rem] brightness-90 relative z-[5]"/>
                 </div>
             </div>
 
