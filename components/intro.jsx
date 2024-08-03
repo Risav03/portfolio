@@ -60,7 +60,7 @@ export default function Intro(){
     return (
         <>
             <div className="w-screen h-[95vh] max-md:hidden text-white relative md:-left-16 overflow-hidden -left-4 flex flex-col items-center justify-center">
-                <div className="absolute max-2xl:top-0 2xl:top-20">
+                <div className="absolute max-2xl:top-0 2xl:top-20 z-50">
                     <h1 className="text-[5rem] text-gray-400 font-bold">I am <span className="text-white">Risavdeb Patra</span></h1>
                     {/* <h3 className="text-[3rem] h-20 flex gap-1 items-end font-semibold bg-gradient-to-br from-green-500 to-emerald-500 text-transparent bg-clip-text">{work} <span className="h-2 w-10 -translate-y-4 bg-white animate-pulse"></span></h3> */}
                 </div>
