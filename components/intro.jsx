@@ -60,7 +60,7 @@ export default function Intro(){
     return (
         <>
             <div className="w-screen h-[95vh] max-md:hidden text-white relative md:-left-16 overflow-hidden -left-4 flex flex-col items-center justify-center">
-                <div className="absolute max-2xl:top-0 2xl:top-20 z-50">
+                <div className="absolute max-2xl:top-0 2xl:top-5 z-50">
                     <h1 className="text-[5rem] text-gray-400 font-bold">I am <span className="text-white">Risavdeb Patra</span></h1>
                     {/* <h3 className="text-[3rem] h-20 flex gap-1 items-end font-semibold bg-gradient-to-br from-green-500 to-emerald-500 text-transparent bg-clip-text">{work} <span className="h-2 w-10 -translate-y-4 bg-white animate-pulse"></span></h3> */}
                 </div>
@@ -75,11 +75,11 @@ export default function Intro(){
 
                 <div className="absolute bottom-0 ">
                     <div className="relative top-40">
-                        <div className="absolute z-[0] left-[8rem] rounded-full blur-[150px] bg-gradient-radial from-green-500 to-emerald-500 max-2xl:w-[25rem] max-2xl:h-[25rem] 2xl:w-[40rem] 2xl:h-[40rem]">
+                        <div className="absolute z-[0] left-[4rem] rounded-full blur-[150px] bg-gradient-radial from-green-500 to-emerald-500 max-2xl:w-[25rem] max-2xl:h-[25rem] 2xl:w-[40rem] 2xl:h-[40rem]">
                         </div>
                         <div className="absolute z-[2] left-[0.5rem] rounded-full max-2xl:w-[40rem] max-2xl:h-[40rem] 2xl:w-[45rem] 2xl:h-[45rem] border-4 border-green-500 border-dashed">
                         </div>
-                        <div className="absolute z-[2] max-2xl:-top-[10rem] 2xl:-top-[20rem] max-2xl:-left-[10rem] 2xl:-left-[15rem] rounded-full max-2xl:w-[60rem] max-2xl:h-[60rem] 2xl:w-[75rem] 2xl:h-[75rem] border-4 border-green-500 border-dashed">
+                        <div className="absolute z-[2] max-2xl:-top-[10rem] 2xl:-top-[12rem] max-2xl:-left-[10rem] 2xl:-left-[12rem] rounded-full max-2xl:w-[60rem] max-2xl:h-[60rem] 2xl:w-[70rem] 2xl:h-[70rem] border-4 border-green-500 border-dashed">
                         </div>
                     </div>
                     <Image src={mypic} className="max-2xl:w-[40rem] 2xl:w-[45rem] brightness-90 relative z-[5]"/>
