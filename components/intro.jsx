@@ -4,16 +4,16 @@ import Image from "next/image"
 import mypic from "@/assets/me.png"
 import mypic2 from "@/assets/me.jpeg"
 import { FaEthereum, FaSquareXTwitter, FaVideo } from "react-icons/fa6";
-import { FaLinkedin } from "react-icons/fa";
-import { AiFillInstagram } from "react-icons/ai";
+import { FaLinkedin, FaPlaneDeparture } from "react-icons/fa";
+import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
 import { FaGithub } from "react-icons/fa6";
 import { useState, useEffect } from "react";
-import { IoIosArrowBack } from "react-icons/io";
+import { IoIosArrowBack, IoLogoGameControllerB } from "react-icons/io";
 import { FloatingBoxes } from "./UI/floatingBoxes";
 import { FloatingIcons } from "./UI/floatingIcons";
 import { CiGlobe } from "react-icons/ci";
 import { SiBlender } from "react-icons/si";
-
+import { RiNftFill } from "react-icons/ri";
 
 export default function Intro(){
 
@@ -59,8 +59,8 @@ export default function Intro(){
 
     return (
         <>
-            <div className="w-screen h-[95vh] max-md:hidden text-white relative md:-left-16 overflow-hidden -left-4 flex flex-col items-center justify-center">
-                <div className="absolute max-2xl:top-0 2xl:top-5 z-50">
+            <div className="w-screen h-screen max-md:hidden text-white relative md:-left-16 overflow-hidden -left-4 flex flex-col items-center justify-center">
+                <div className="absolute max-2xl:top-0 2xl:top-5 z-50 pt-10">
                     <h1 className="text-[5rem] text-gray-400 font-bold">I am <span className="text-white">Risavdeb Patra</span></h1>
                     {/* <h3 className="text-[3rem] h-20 flex gap-1 items-end font-semibold bg-gradient-to-br from-green-500 to-emerald-500 text-transparent bg-clip-text">{work} <span className="h-2 w-10 -translate-y-4 bg-white animate-pulse"></span></h3> */}
                 </div>
@@ -69,17 +69,21 @@ export default function Intro(){
 
                 <div className="absolute bottom-0 ">
                     <div className="relative top-40">
-                        <div className="absolute z-[0] left-[4rem] rounded-full blur-[150px] bg-gradient-radial from-green-500 to-emerald-500 max-2xl:w-[25rem] max-2xl:h-[25rem] 2xl:w-[40rem] 2xl:h-[40rem]">
+                        <div className="absolute z-[0] left-[5rem] blur-[150px] rounded-full  bg-gradient-radial from-green-500 to-emerald-500 max-2xl:w-[30rem] max-2xl:h-[30rem] 2xl:w-[40rem] 2xl:h-[40rem]">
                         </div>
-                        <div className="absolute z-[2] left-[0.5rem] rounded-full max-2xl:w-[40rem] max-2xl:h-[40rem] 2xl:w-[45rem] 2xl:h-[45rem] border-4 border-green-500 border-dashed">
+                        <div className="absolute z-[2] left-[0.5rem] rounded-full max-2xl:w-[40rem] max-2xl:h-[40rem] 2xl:w-[45rem] 2xl:h-[45rem] border-8 border-green-500 border-double">
                         </div>
-                        <div className="absolute z-[2] max-2xl:-top-[10rem] 2xl:-top-[12rem] max-2xl:-left-[10rem] 2xl:-left-[12rem] rounded-full max-2xl:w-[60rem] max-2xl:h-[60rem] 2xl:w-[70rem] 2xl:h-[70rem] border-4 border-green-500 border-dashed">
+                        <div className="absolute z-[2] max-2xl:-top-[10rem] 2xl:-top-[12rem] max-2xl:-left-[10rem] 2xl:-left-[12rem] rounded-full max-2xl:w-[60rem] max-2xl:h-[60rem] 2xl:w-[70rem] 2xl:h-[70rem] border-4 border-green-500 border-dotted">
                         </div>
 
-                        <FloatingIcons className=" absolute z-50 -top-[2rem] left-[3rem] rotate-[20deg] "><FaEthereum className="text-emerald-500" /></FloatingIcons>
-                        <FloatingIcons className=" absolute z-50 -top-[5rem] right-[6rem] rotate-[-10deg] "><CiGlobe className="text-green-500" /></FloatingIcons>
-                        <FloatingIcons className=" absolute z-50 top-[18rem] -right-[2rem] rotate-[-10deg] "><SiBlender className="text-emerald-500" /></FloatingIcons>
-                        <FloatingIcons className=" absolute z-50 top-[19rem] -left-[2rem] rotate-[20deg] "><FaVideo className="text-green-500" /></FloatingIcons>
+                        <FloatingIcons className=" absolute z-50 -top-[2rem] left-[3rem] rotate-[20deg] "><FaEthereum className="text-emerald-500 text-xl" /></FloatingIcons>
+                        <FloatingIcons className=" absolute z-50 -top-[5rem] -left-[10rem] rotate-[-10deg] "><IoLogoGameControllerB className="text-green-500 text-3xl" /></FloatingIcons>
+                        <FloatingIcons className=" absolute z-50 top-[5rem] -right-[13rem] rotate-[10deg] "><AiFillGithub className="text-emerald-500 text-lg" /></FloatingIcons>
+                        <FloatingIcons className=" absolute z-50 -top-[5rem] right-[6rem] rotate-[-10deg] "><CiGlobe className="text-green-500 text-2xl" /></FloatingIcons>
+                        <FloatingIcons className=" absolute z-50 top-[25rem] -left-[13rem] rotate-[5deg] "><FaPlaneDeparture className="text-green-500 text-xl" /></FloatingIcons>
+                        <FloatingIcons className=" absolute z-50 top-[18rem] -right-[2rem] rotate-[-10deg] "><SiBlender className="text-emerald-500 text-xl" /></FloatingIcons>
+                        <FloatingIcons className=" absolute z-50 top-[19rem] -left-[2rem] rotate-[20deg] "><FaVideo className="text-green-500 text-lg" /></FloatingIcons>
+                        <FloatingIcons className=" absolute z-50 top-[25rem] -right-[15rem] rotate-[-30deg] "><RiNftFill className="text-green-500 text-lg" /></FloatingIcons>
 
                         <FloatingBoxes className=" top-[0rem] z-50 -right-[10rem] absolute font-bold max-2xl:text-2xl 2xl:text-3xl " >Web Developer</FloatingBoxes>
                         <FloatingBoxes className=" z-50 top-[4rem] -left-[12rem] absolute font-bold max-2xl:text-xl 2xl:text-2xl " >Smart Contracts</FloatingBoxes>

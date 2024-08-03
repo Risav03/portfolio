@@ -6,7 +6,7 @@ import { MyJourney } from "@/components/myJourney";
 
 export default function Home() {
   return (
-    <main className="p-16 flex flex-col text-white  max-md:px-4 max-md:py-20 overflow-x-hidden">
+    <main className=" flex flex-col text-white max-md:px-4 max-md:pb-20 px-16 overflow-x-hidden">
       <Background/>
       <Intro/>
       <MyJourney/>
