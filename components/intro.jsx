@@ -104,7 +104,7 @@ export default function Intro(){
             </div>
 
 
-            <div className="md:hidden min-h-screen flex flex-col items-center justify-center -translate-y-16">
+            <div className="md:hidden min-h-screen flex flex-col items-center justify-center">
 
             <div className="flex max-md:flex-col flex-row items-center gap-10">
                 <div className="flex max-md:flex-col flex-row items-center justify-center gap-10">
@@ -141,11 +141,11 @@ export default function Intro(){
 
             </div>
 
-            <div className="w-screen -translate-x-16 h-1 bg-green-500">
+            <div className="w-full md:-translate-x-16 h-[1px] bg-green-500">
 
             </div>
 
-            <div className="w-screen -translate-x-16 h-1 bg-emerald-700">
+            <div className="w-full md:-translate-x-16 h-[1px] bg-emerald-700">
 
             </div>
         </>
