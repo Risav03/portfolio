@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { cn } from '@/utils/utils'
 
-export const FloatingIcons = ({children, className}) => {
+export const FloatingIcons = ({children, className, padding}) => {
     const [opacity, setOpacity] = useState(0);
 
     useEffect(() => {
@@ -23,7 +23,7 @@ export const FloatingIcons = ({children, className}) => {
                 className
             )}
         >
-            <div className={cn(`bg-gradient-to-br p-4 w-full text-2xl flex items-center justify-center rounded-full from-[#0a0c0e] to-[#000000]`)}>
+            <div className={cn(`bg-gradient-to-br ${padding} w-full text-2xl flex items-center justify-center rounded-full from-[#0a0c0e] to-[#000000]`)}>
                 {children}
             </div>
         </div>

@@ -15,6 +15,7 @@ module.exports = {
       },
       animation: {
         fadeIn: 'fadeIn 300ms ease-in forwards',
+        spinslow: 'spin 60s linear infinite'
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
