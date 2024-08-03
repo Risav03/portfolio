@@ -3,7 +3,7 @@
 import Image from "next/image"
 import mypic from "@/assets/me.png"
 import mypic2 from "@/assets/me.jpeg"
-import { FaEthereum, FaSquareXTwitter, FaVideo } from "react-icons/fa6";
+import { FaEthereum, FaHtml5, FaNodeJs, FaReact, FaSquareXTwitter, FaVideo } from "react-icons/fa6";
 import { FaLinkedin, FaPlaneDeparture } from "react-icons/fa";
 import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
 import { FaGithub } from "react-icons/fa6";
@@ -12,8 +12,8 @@ import { IoIosArrowBack, IoLogoGameControllerB } from "react-icons/io";
 import { FloatingBoxes } from "./UI/floatingBoxes";
 import { FloatingIcons } from "./UI/floatingIcons";
 import { CiGlobe } from "react-icons/ci";
-import { SiBlender } from "react-icons/si";
-import { RiNftFill } from "react-icons/ri";
+import { SiBlender, SiMongodb, SiSolana, SiSolidity, SiTailwindcss } from "react-icons/si";
+import { RiNextjsFill, RiNftFill } from "react-icons/ri";
 
 export default function Intro(){
 
@@ -76,14 +76,23 @@ export default function Intro(){
                         <div className="absolute z-[2] max-2xl:-top-[10rem] 2xl:-top-[12rem] max-2xl:-left-[10rem] 2xl:-left-[12rem] rounded-full max-2xl:w-[60rem] max-2xl:h-[60rem] 2xl:w-[70rem] 2xl:h-[70rem] border-4 border-green-500 border-dotted">
                         </div>
 
+                        
                         <FloatingIcons className=" absolute z-50 -top-[2rem] left-[3rem] rotate-[20deg] "><FaEthereum className="text-emerald-500 text-xl" /></FloatingIcons>
-                        <FloatingIcons className=" absolute z-50 -top-[5rem] -left-[10rem] rotate-[-10deg] "><IoLogoGameControllerB className="text-green-500 text-3xl" /></FloatingIcons>
+                        <FloatingIcons className=" absolute z-50 top-[5rem] left-[8rem] rotate-[-10deg] "><RiNextjsFill className="text-green-500 text-xl" /></FloatingIcons>
+                        <FloatingIcons className=" absolute z-50 -top-[10rem] right-[12rem] rotate-[-10deg] "><FaReact className="text-emerald-500 text-xl" /></FloatingIcons>
+                        <FloatingIcons className=" absolute z-50 -top-[8rem] left-[12rem] rotate-[-10deg] "><FaNodeJs className="text-emerald-500 text-lg" /></FloatingIcons>
+                        <FloatingIcons className=" absolute z-50 -top-[5rem] -left-[10rem] rotate-[-10deg] "><SiSolana className="text-green-500 text-2xl" /></FloatingIcons>
                         <FloatingIcons className=" absolute z-50 top-[5rem] -right-[13rem] rotate-[10deg] "><AiFillGithub className="text-emerald-500 text-lg" /></FloatingIcons>
+                        <FloatingIcons className=" absolute z-50 top-[2rem] -left-[18rem] rotate-[10deg] "><SiTailwindcss className="text-emerald-500 text-lg" /></FloatingIcons>
                         <FloatingIcons className=" absolute z-50 -top-[5rem] right-[6rem] rotate-[-10deg] "><CiGlobe className="text-green-500 text-2xl" /></FloatingIcons>
                         <FloatingIcons className=" absolute z-50 top-[25rem] -left-[13rem] rotate-[5deg] "><FaPlaneDeparture className="text-green-500 text-xl" /></FloatingIcons>
+                        <FloatingIcons className=" absolute z-50 top-[10rem] -right-[5rem] rotate-[10deg] "><SiMongodb className="text-emerald-500 text-lg" /></FloatingIcons>
+                        <FloatingIcons className=" absolute z-50 top-[10rem] -left-[7rem] rotate-[-15deg] "><SiSolidity className="text-emerald-500 text-lg" /></FloatingIcons>
                         <FloatingIcons className=" absolute z-50 top-[18rem] -right-[2rem] rotate-[-10deg] "><SiBlender className="text-emerald-500 text-xl" /></FloatingIcons>
                         <FloatingIcons className=" absolute z-50 top-[19rem] -left-[2rem] rotate-[20deg] "><FaVideo className="text-green-500 text-lg" /></FloatingIcons>
                         <FloatingIcons className=" absolute z-50 top-[25rem] -right-[15rem] rotate-[-30deg] "><RiNftFill className="text-green-500 text-lg" /></FloatingIcons>
+                        <FloatingIcons className=" absolute z-50 -top-[6rem] -right-[10rem] rotate-[10deg] "><FaHtml5 className="text-green-500 text-xl" /></FloatingIcons>
+
 
                         <FloatingBoxes className=" top-[0rem] z-50 -right-[10rem] absolute font-bold max-2xl:text-2xl 2xl:text-3xl " >Web Developer</FloatingBoxes>
                         <FloatingBoxes className=" z-50 top-[4rem] -left-[12rem] absolute font-bold max-2xl:text-xl 2xl:text-2xl " >Smart Contracts</FloatingBoxes>
