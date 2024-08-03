@@ -141,11 +141,11 @@ export default function Intro(){
 
             </div>
 
-            <div className="w-full md:-translate-x-16 h-[1px] bg-green-500">
+            <div className="max-md:w-full w-screen md:-translate-x-16 h-[1px] bg-green-500">
 
             </div>
 
-            <div className="w-full md:-translate-x-16 h-[1px] bg-emerald-700">
+            <div className="max-md:w-full w-screen md:-translate-x-16 h-[1px] bg-emerald-700">
 
             </div>
         </>
