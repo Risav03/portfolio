@@ -43,7 +43,7 @@ export const Experience = () => {
                     <h3 className='text-white font-bold text-2xl'>Beast Verse</h3>
                     <h3 className='text-green-400 font-bold text-lg'>Founder</h3>
                         <ul className='text-sm text-start font-semibold ml-4 text-green-300 my-5'>
-                            <li className='list-disc'>Acted as a Community Collaboration</li>
+                            <li className='list-disc'>Acted as a Community Collaborator</li>
                             <li className='list-disc'>Smart Contracts</li>
                             <li className='list-disc'>Fullstack Web Development</li>
                         </ul>
