@@ -1,7 +1,17 @@
+"use client"
+
+import { useGlobalContext } from "../context/MainContext";
+import { Heading } from "./heading";
+
 export default function Experience(){
+
+    const {setTheme} = useGlobalContext();
+
     return(
-        <div className="text-center py-20">
-            <h2 className="text-[2rem]">Experience</h2>
+        <div id="experience" className="text-center py-20">
+            <Heading>Experience</Heading>
+            
+            
         </div>
     )
 }
