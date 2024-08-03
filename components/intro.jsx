@@ -77,12 +77,12 @@ export default function Intro(){
                     <div className="relative top-40">
                         <div className="absolute z-[0] left-[8rem] rounded-full blur-[150px] bg-gradient-radial from-green-500 to-emerald-500 max-2xl:w-[25rem] max-2xl:h-[25rem] 2xl:w-[40rem] 2xl:h-[40rem]">
                         </div>
-                        <div className="absolute z-[2] left-[0rem] rounded-full max-2xl:w-[40rem] max-2xl:h-[40rem] 2xl:w-[50rem] 2xl:h-[50rem] border-4 border-green-500 border-dashed">
+                        <div className="absolute z-[2] left-[0.5rem] rounded-full max-2xl:w-[40rem] max-2xl:h-[40rem] 2xl:w-[45rem] 2xl:h-[45rem] border-4 border-green-500 border-dashed">
                         </div>
-                        <div className="absolute z-[2] max-2xl:-top-[10rem] 2xl:-top-[20rem] max-2xl:-left-[10rem] 2xl:-left-[15rem] rounded-full max-2xl:w-[60rem] max-2xl:h-[60rem] 2xl:w-[80rem] 2xl:h-[80rem] border-4 border-green-500 border-dashed">
+                        <div className="absolute z-[2] max-2xl:-top-[10rem] 2xl:-top-[20rem] max-2xl:-left-[10rem] 2xl:-left-[15rem] rounded-full max-2xl:w-[60rem] max-2xl:h-[60rem] 2xl:w-[75rem] 2xl:h-[75rem] border-4 border-green-500 border-dashed">
                         </div>
                     </div>
-                    <Image src={mypic} className="max-2xl:w-[40rem] 2xl:w-[50rem] brightness-90 relative z-[5]"/>
+                    <Image src={mypic} className="max-2xl:w-[40rem] 2xl:w-[45rem] brightness-90 relative z-[5]"/>
                 </div>
             </div>
 
