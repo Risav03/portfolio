@@ -37,7 +37,7 @@ export const Experience = () => {
             </div>
             </div>
 
-            <div className='opacity-65'>
+            <div className='opacity-80'>
                 <div className='w-full my-10 border-b-4 border-green-400 flex max-md:flex-col rounded-b-xl bg-gradient-to-b from-transparent md:h-64 to-green-500/60  p-5'>
                     <div className='flex flex-col md:w-[80%] items-start justify-start gap-1 my-5 md:my-10'>
                     <h3 className='text-white font-bold text-2xl'>Beast Verse</h3>
@@ -62,7 +62,7 @@ export const Experience = () => {
             </div>
 
             
-            <div className='opacity-30'>
+            <div className='opacity-60'>
 
                 <div className='w-full  border-b-4 border-green-400 flex max-md:flex-col rounded-b-xl bg-gradient-to-b from-transparent md:h-64 to-green-500/60 p-5'>
                         <div className='flex flex-col md:w-[80%] items-start justify-start gap-1 my-5 md:my-10'>

@@ -39,7 +39,7 @@ const arr = [
         project: "Ed360",
         tech: [next, tailwind, mongodb, node],
         awards: [{img:storyblok, link: "https://certificate.givemycertificate.com/c/1b7aa65c-ba03-4b7e-b549-d3a140cbb968"}, {img:godaddy, link:"https://certificate.givemycertificate.com/c/6cc72a1c-8df9-4960-926d-164c5902484e"}, {img:postman, link:"https://certificate.givemycertificate.com/c/df34dad0-39ae-4ec8-a4d0-de8292e4a074"}, {img:peerlist, link:"https://certificate.givemycertificate.com/c/727f902b-b1dc-4b8f-9931-db3400f041c6"}],
-        link: "https://medbase-ii.firebaseapp.com/",
+        link: "https://ed360-teacher-frontend.vercel.app/dashboard",
         github: "https://github.com/Risav03/Ed360-Student-Frontend"
     },
     {
