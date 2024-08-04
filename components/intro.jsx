@@ -107,7 +107,16 @@ export default function Intro(){
                         <FloatingBoxes className=" z-50 top-[20rem] -right-[15rem] absolute font-bold max-2xl:text-xl 2xl:text-2xl  " >3D Artist</FloatingBoxes>
                         <FloatingBoxes className=" top-[16rem] z-50 -left-[16rem] absolute font-bold text-2xl " >Video Editor</FloatingBoxes>
                     </div>
-                    <Image unoptimized width={2160} height={2160} src={mypic} className="max-2xl:w-[40rem] 2xl:w-[45rem] brightness-90 relative z-[5]"/>
+                    <div className="relative z-50">
+                    <div className="flex gap-6 px-4 md:w-[20rem] w-[15rem] absolute z-50 bottom-10 left-40 justify-center py-2 bg-black rounded-xl border-y-[1px] border-emerald-500">
+                                <a href="https://x.com/Degeneer03" target="_blank"><FaSquareXTwitter size={35} className= "fill-emerald-500  duration-300 hover:bg-emerald-400 hover:fill-black rounded-md"/></a>
+                                <a href="https://www.linkedin.com/in/risavdeb-patra-703971227/" target="_blank" ><FaLinkedin size={35} className= "fill-emerald-500  duration-300 hover:bg-emerald-400 hover:fill-black rounded-md"/></a>
+                                <a href="https://www.instagram.com/__.r.i.j.u.__/" target="_blank" ><AiFillInstagram size={35} className= "fill-emerald-500  duration-300 hover:bg-emerald-400 hover:fill-black rounded-md"/></a>
+                                <a href="https://github.com/Risav03" target="_blank"><FaGithub size={35} className= "fill-emerald-500  duration-300 hover:bg-emerald-400 hover:fill-black rounded-md"/></a>
+                    </div>
+                    <Image unoptimized width={2160} height={2160} src={mypic} className="max-2xl:w-[40rem] 2xl:w-[45rem] brightness-90 z-[5]"/>
+
+                    </div>
                 </div>
             </div>
 
@@ -135,10 +144,10 @@ export default function Intro(){
                             
                         </div>
                         <div className="flex gap-6 relative px-4 md:w-[20rem] w-[15rem] justify-center py-2 bg-black rounded-xl border-y-[1px] border-emerald-500">
-                                <FaSquareXTwitter size={35} className= "fill-emerald-500  duration-300 hover:bg-emerald-400 hover:fill-black rounded-md"/>
-                                <FaLinkedin size={35} className= "fill-emerald-500  duration-300 hover:bg-emerald-400 hover:fill-black rounded-md"/>
-                                <AiFillInstagram size={35} className= "fill-emerald-500  duration-300 hover:bg-emerald-400 hover:fill-black rounded-md"/>
-                                <FaGithub size={35} className= "fill-emerald-500  duration-300 hover:bg-emerald-400 hover:fill-black rounded-md"/>
+                        <a href="https://x.com/Degeneer03" target="_blank"><FaSquareXTwitter size={35} className= "fill-emerald-500  duration-300 hover:bg-emerald-400 hover:fill-black rounded-md"/></a>
+                                <a href="https://www.linkedin.com/in/risavdeb-patra-703971227/" target="_blank" ><FaLinkedin size={35} className= "fill-emerald-500  duration-300 hover:bg-emerald-400 hover:fill-black rounded-md"/></a>
+                                <a href="https://www.instagram.com/__.r.i.j.u.__/" target="_blank" ><AiFillInstagram size={35} className= "fill-emerald-500  duration-300 hover:bg-emerald-400 hover:fill-black rounded-md"/></a>
+                                <a href="https://github.com/Risav03" target="_blank"><FaGithub size={35} className= "fill-emerald-500  duration-300 hover:bg-emerald-400 hover:fill-black rounded-md"/></a>
                         </div>
                     </div>
                 </div>
