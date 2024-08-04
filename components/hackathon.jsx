@@ -64,10 +64,10 @@ export const Hackathon = () => {
 
             {arr.map((item)=>(
 
-                <div className='w-[25rem] relative h-[30rem] bg-gradient-to-br from-green-500/20 to-emerald-500/20 border-y-[1px] border-y-emerald-500/80 rounded-xl gap-4 flex flex-col items-center justify-center md:p-10 p-4'>
+                <div className='w-[25rem] relative h-[30rem] bg-gradient-to-br from-green-500/20 to-emerald-500/20 border-y-[1px] border-y-emerald-500/80 rounded-xl gap-4 flex flex-col items-center justify-start md:p-10 p-4'>
                 
                     <h3 className='text-2xl font-bold bg-gradient-to-br from-green-500 to-emerald-500 bg-clip-text text-transparent '>{item.hackathon}</h3>
-                    <div className='flex items-center justify-center w-full'>
+                    <div className='flex items-center justify-center w-full my-2'>
                         <div className='w-[40%] flex flex-col items-center justify-center gap-2 border-r-[1px] border-green-500'>
                             <h3 className='text-sm'>Project</h3>
                             <h3 className='font-semibold'>{item.project}</h3>
@@ -83,7 +83,7 @@ export const Hackathon = () => {
                         </div>
                     </div>
                     <div>
-                        <h4 className='text-sm text-center text-green-300'>{item.description}</h4>
+                        <h4 className='text-sm text-center text-green-300 my-4'>{item.description}</h4>
                     </div>
                     {item.awards.length > 0 && <h3 className='text-xl font-semibold leading-[0px] mt-5'>Awards</h3>}
                     <div className='flex flex-wrap gap-2 my-3'>
