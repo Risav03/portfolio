@@ -64,7 +64,7 @@ export const Hackathon = () => {
 
             {arr.map((item)=>(
 
-                <div className='w-[25rem] relative h-[30rem] bg-gradient-to-br from-green-500/20 to-emerald-500/20 border-y-[1px] border-y-emerald-500/80 rounded-xl gap-4 flex flex-col items-center justify-start md:p-10 p-4'>
+                <div className='w-[25rem] relative h-[30rem] bg-gradient-to-br from-green-500/20 to-emerald-500/20 border-y-[1px] border-y-emerald-500/80 rounded-xl gap-4 flex flex-col items-center justify-center md:justify-start md:p-10 p-4'>
                 
                     <h3 className='text-2xl font-bold bg-gradient-to-br from-green-500 to-emerald-500 bg-clip-text text-transparent '>{item.hackathon}</h3>
                     <div className='flex items-center justify-center w-full my-2'>
