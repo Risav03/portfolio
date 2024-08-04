@@ -22,7 +22,7 @@ import { CommitBg } from "./UI/commitBg";
 export default function Intro(){
 
     const[work, setWork] = useState("");
-    var workArr = ["CSE Undergrad" ,"Web Developer", "3D Artist", "Smart Contracts Developer", "Video Editor"];
+    var workArr = ["CSE Undergrad" ,"Web Developer", "3D Artist", "Freelancer", "Smart Contracts Developer", "Video Editor"];
 
     async function parseWork(){
         const currentWork = workArr[i];
@@ -41,7 +41,7 @@ export default function Intro(){
 
         await delay(500);
 
-        if(i == 4){
+        if(i == 5){
             i = 0;
         }
         else{
@@ -65,7 +65,7 @@ export default function Intro(){
         <>
             <div className="w-screen h-screen max-md:hidden text-white relative md:-left-16 overflow-hidden -left-4 flex flex-col items-center justify-center">
                 <CommitBg/>
-                <div className="absolute max-2xl:top-0 2xl:top-5 z-50 pt-12">
+                <div className="absolute max-2xl:top-0 2xl:top-5 z-[100] pt-12">
                     <h2 className="text-center text-gray-400 text-[2rem] font-semibold leading-[3px]" >I am</h2>
                     <h1 className="text-[4rem] text-white font-bold">Risavdeb Patra</h1>
                     {/* <h3 className="text-[3rem] h-20 flex gap-1 items-end font-semibold bg-gradient-to-br from-green-500 to-emerald-500 text-transparent bg-clip-text">{work} <span className="h-2 w-10 -translate-y-4 bg-white animate-pulse"></span></h3> */}
@@ -103,7 +103,7 @@ export default function Intro(){
                         <FloatingIcons padding="p-3" className=" absolute z-50 top-[25rem] -right-[15rem] rotate-[-30deg] "><RiNftFill className="text-green-500 text-lg" /></FloatingIcons>
                         <FloatingIcons padding="p-2" className=" absolute z-50 -top-[6rem] -right-[10rem] rotate-[10deg] "><FaHtml5 className="text-green-500 text-xl" /></FloatingIcons>
 
-
+                        <FloatingBoxes className=" -top-[11rem] z-50 left-[10rem] absolute font-bold max-2xl:text-2xl 2xl:text-3xl " >Freelancer</FloatingBoxes>
                         <FloatingBoxes className=" top-[0rem] z-50 -right-[10rem] absolute font-bold max-2xl:text-2xl 2xl:text-3xl " >Web Developer</FloatingBoxes>
                         <FloatingBoxes className=" z-50 top-[4rem] -left-[12rem] absolute font-bold max-2xl:text-xl 2xl:text-2xl " >Smart Contracts</FloatingBoxes>
                         <FloatingBoxes className=" z-50 top-[20rem] -right-[15rem] absolute font-bold max-2xl:text-xl 2xl:text-2xl  " >3D Artist</FloatingBoxes>
