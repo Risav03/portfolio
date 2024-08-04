@@ -103,7 +103,7 @@ export default function Intro(){
                         <FloatingIcons padding="p-3" className=" absolute z-50 top-[25rem] -right-[15rem] rotate-[-30deg] "><RiNftFill className="text-green-500 text-lg" /></FloatingIcons>
                         <FloatingIcons padding="p-2" className=" absolute z-50 -top-[6rem] -right-[10rem] rotate-[10deg] "><FaHtml5 className="text-green-500 text-xl" /></FloatingIcons>
 
-                        <FloatingBoxes className=" -top-[11rem] z-50 left-[10rem] absolute font-bold max-2xl:text-2xl 2xl:text-3xl " >Freelancer</FloatingBoxes>
+                        <FloatingBoxes className=" top-[9rem] z-50 -left-[1rem] absolute font-bold max-2xl:text-xl 2xl:text-2xl " >Freelancer</FloatingBoxes>
                         <FloatingBoxes className=" top-[0rem] z-50 -right-[10rem] absolute font-bold max-2xl:text-2xl 2xl:text-3xl " >Web Developer</FloatingBoxes>
                         <FloatingBoxes className=" z-50 top-[4rem] -left-[12rem] absolute font-bold max-2xl:text-xl 2xl:text-2xl " >Smart Contracts</FloatingBoxes>
                         <FloatingBoxes className=" z-50 top-[20rem] -right-[15rem] absolute font-bold max-2xl:text-xl 2xl:text-2xl  " >3D Artist</FloatingBoxes>
