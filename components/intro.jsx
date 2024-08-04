@@ -16,6 +16,7 @@ import { SiBlender, SiMongodb, SiSolana, SiSolidity, SiTailwindcss } from "react
 import { RiNextjsFill, RiNftFill } from "react-icons/ri";
 import { BiLogoTypescript } from "react-icons/bi";
 import { MdOutlineCardTravel } from "react-icons/md";
+import { CommitBg } from "./UI/commitBg";
 
 
 export default function Intro(){
@@ -63,6 +64,7 @@ export default function Intro(){
     return (
         <>
             <div className="w-screen h-screen max-md:hidden text-white relative md:-left-16 overflow-hidden -left-4 flex flex-col items-center justify-center">
+                <CommitBg/>
                 <div className="absolute max-2xl:top-0 2xl:top-5 z-50 pt-12">
                     <h2 className="text-center text-gray-400 text-[2rem] font-semibold leading-[3px]" >I am</h2>
                     <h1 className="text-[4rem] text-white font-bold">Risavdeb Patra</h1>
@@ -122,6 +124,7 @@ export default function Intro(){
 
 
             <div className="md:hidden min-h-screen flex flex-col items-center justify-center">
+            <CommitBg/>
 
             <div className="flex max-md:flex-col flex-row items-center gap-10">
                 <div className="flex max-md:flex-col flex-row items-center justify-center gap-10">
