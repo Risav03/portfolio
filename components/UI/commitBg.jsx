@@ -83,7 +83,7 @@ export const CommitBg = () => {
             generateRow5();
             generateRow6();
             generateRow7();
-        },3000)
+        },2000)
         
     },[])
 
