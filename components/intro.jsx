@@ -15,7 +15,7 @@ import { CiGlobe } from "react-icons/ci";
 import { SiBlender, SiMongodb, SiSolana, SiSolidity, SiTailwindcss } from "react-icons/si";
 import { RiNextjsFill, RiNftFill } from "react-icons/ri";
 import { BiLogoTypescript } from "react-icons/bi";
-import { MdOutlineCardTravel } from "react-icons/md";
+import { MdOutlineCardTravel, MdPictureAsPdf } from "react-icons/md";
 import { CommitBg } from "./UI/commitBg";
 
 
@@ -115,6 +115,7 @@ export default function Intro(){
                                 <a href="https://www.linkedin.com/in/risavdeb-patra-703971227/" target="_blank" ><FaLinkedin size={35} className= "fill-emerald-500  duration-300 hover:bg-emerald-400 hover:fill-black rounded-md"/></a>
                                 <a href="https://www.instagram.com/__.r.i.j.u.__/" target="_blank" ><AiFillInstagram size={35} className= "fill-emerald-500  duration-300 hover:bg-emerald-400 hover:fill-black rounded-md"/></a>
                                 <a href="https://github.com/Risav03" target="_blank"><FaGithub size={35} className= "fill-emerald-500  duration-300 hover:bg-emerald-400 hover:fill-black rounded-md"/></a>
+                                <a href="https://drive.google.com/file/d/19_0YKGBQg185Kc20vsr2mPCeA8ZNxmtn/view?usp=sharing" target="_blank" ><MdPictureAsPdf size={35} className= "fill-emerald-500  duration-300 hover:bg-emerald-400 hover:fill-black rounded-md"/></a>
                     </div>
                     <Image unoptimized width={2160} height={2160} src={mypic} className="max-2xl:w-[40rem] 2xl:w-[45rem] brightness-90 z-[5]"/>
 
@@ -146,11 +147,13 @@ export default function Intro(){
                             </div>
                             
                         </div>
-                        <div className="flex gap-6 relative px-4 md:w-[20rem] w-[15rem] justify-center py-2 bg-black rounded-xl border-y-[1px] border-emerald-500">
+                        <div className="flex gap-6 relative px-4  w-[20rem] justify-center py-2 bg-black rounded-xl border-y-[1px] border-emerald-500">
                         <a href="https://x.com/Degeneer03" target="_blank"><FaSquareXTwitter size={35} className= "fill-emerald-500  duration-300 hover:bg-emerald-400 hover:fill-black rounded-md"/></a>
                                 <a href="https://www.linkedin.com/in/risavdeb-patra-703971227/" target="_blank" ><FaLinkedin size={35} className= "fill-emerald-500  duration-300 hover:bg-emerald-400 hover:fill-black rounded-md"/></a>
                                 <a href="https://www.instagram.com/__.r.i.j.u.__/" target="_blank" ><AiFillInstagram size={35} className= "fill-emerald-500  duration-300 hover:bg-emerald-400 hover:fill-black rounded-md"/></a>
                                 <a href="https://github.com/Risav03" target="_blank"><FaGithub size={35} className= "fill-emerald-500  duration-300 hover:bg-emerald-400 hover:fill-black rounded-md"/></a>
+                                <a href="https://drive.google.com/file/d/19_0YKGBQg185Kc20vsr2mPCeA8ZNxmtn/view?usp=sharing" target="_blank" ><MdPictureAsPdf size={35} className= "fill-emerald-500  duration-300 hover:bg-emerald-400 hover:fill-black rounded-md"/></a>
+
                         </div>
                     </div>
                 </div>
