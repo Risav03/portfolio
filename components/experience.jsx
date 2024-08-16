@@ -2,6 +2,7 @@
 
 import React from 'react'
 import { Heading } from './heading'
+import { IoMdGlobe } from 'react-icons/io'
 
 export const Experience = () => {
 
@@ -16,7 +17,7 @@ export const Experience = () => {
             <div className='opacity-100'>
             <div className='w-full my-10 border-b-4 border-green-400 flex max-md:flex-col rounded-b-xl bg-gradient-to-b from-transparent md:h-64 to-green-500/60 p-5'>
                 <div className='flex flex-col md:w-[80%] items-start justify-start gap-1 my-5 md:my-10'>
-                <h3 className='text-white font-bold text-2xl'>3xBuilds</h3>
+                <h3 className='text-white font-bold text-2xl flex gap-3 items-center'>3xBuilds <a href='https://www.3xbuilds.com' target='_blank' className='hover:text-green-500 text-white duration-200' ><IoMdGlobe/></a></h3>
                 <h3 className='text-green-400 font-bold text-lg'>Co-Founder</h3>
                     <ul className='text-sm text-start font-semibold ml-4 text-green-300 my-5'>
                         <li className='list-disc'>Client acquisition</li>
