@@ -10,7 +10,7 @@ export const Experience = () => {
 
   return (
     <div className='w-screen flex flex-col items-center text-center -translate-x-4 md:-translate-x-16 mt-20'>
-        <Heading>Work Experience</Heading>
+        <Heading>Experience</Heading>
 
         <div className='w-[90%] '>
 
@@ -20,9 +20,9 @@ export const Experience = () => {
                 <h3 className='text-white font-bold text-2xl flex gap-3 items-center'>3xBuilds <a href='https://www.3xbuilds.com' target='_blank' className='hover:text-green-500 text-white duration-200' ><IoMdGlobe/></a></h3>
                 <h3 className='text-green-400 font-bold text-lg'>Co-Founder</h3>
                     <ul className='text-sm text-start font-semibold ml-4 text-green-300 my-5'>
-                        <li className='list-disc'>Client acquisition</li>
-                        <li className='list-disc'>Smart Contracts</li>
-                        <li className='list-disc'>Fullstack Web Development</li>
+                        <li className='list-disc'>Working as a Full Stack Web developer</li>
+                        <li className='list-disc'>Developing Smart Contracts</li>
+                        <li className='list-disc'>Acquiring clients via social media</li>
                     </ul>
                 </div>
                 <div className='h-full flex md:flex-col md:items-center items-center justify-center md:justify-center gap-2 font-bold md:w-[20%]'>
@@ -45,8 +45,8 @@ export const Experience = () => {
                     <h3 className='text-green-400 font-bold text-lg'>Founder</h3>
                         <ul className='text-sm text-start font-semibold ml-4 text-green-300 my-5'>
                             <li className='list-disc'>Acted as a Community Collaborator</li>
-                            <li className='list-disc'>Smart Contracts</li>
-                            <li className='list-disc'>Fullstack Web Development</li>
+                            <li className='list-disc'>Developed Smart Contracts</li>
+                            <li className='list-disc'>Worked as a Full Stack Web Developer</li>
                         </ul>
                     </div>
                     <div className='h-full flex md:flex-col md:items-center items-center justify-center md:justify-center gap-2 font-bold md:w-[20%]'>

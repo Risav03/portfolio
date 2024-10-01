@@ -16,8 +16,8 @@ export default function Home() {
       <Intro/>
       <Experience/>
       <Hackathon/>
-      <Projects/>
       <TechStack/>
+      <Projects/>
       <Footer/>
     </main>
   );

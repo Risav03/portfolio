@@ -22,7 +22,7 @@ import { CommitBg } from "./UI/commitBg";
 export default function Intro(){
 
     const[work, setWork] = useState("");
-    var workArr = ["CSE Undergrad" ,"Web Developer", "3D Artist", "Freelancer", "Smart Contracts Developer", "Video Editor"];
+    var workArr = ["CSE Undergrad" ,"Web Developer", "3D Artist", "Leader", "Freelancer", "Web3 Developer", "Video Editor"];
 
     async function parseWork(){
         const currentWork = workArr[i];
@@ -105,7 +105,8 @@ export default function Intro(){
 
                         <FloatingBoxes className=" top-[9rem] z-50 -left-[1rem] absolute font-bold max-2xl:text-xl 2xl:text-2xl " >Freelancer</FloatingBoxes>
                         <FloatingBoxes className=" top-[0rem] z-50 -right-[10rem] absolute font-bold max-2xl:text-2xl 2xl:text-3xl " >Web Developer</FloatingBoxes>
-                        <FloatingBoxes className=" z-50 top-[4rem] -left-[12rem] absolute font-bold max-2xl:text-xl 2xl:text-2xl " >Smart Contracts</FloatingBoxes>
+                        <FloatingBoxes className=" top-[7rem] z-50 -right-[2rem] pointer-events-auto absolute font-bold max-2xl:text-xl 2xl:text-2xl " >Leadership</FloatingBoxes>
+                        <FloatingBoxes className=" z-50 top-[4rem] -left-[12rem] pointer-events-auto absolute font-bold max-2xl:text-xl 2xl:text-2xl " >Web3 Developer</FloatingBoxes>
                         <FloatingBoxes className=" z-50 top-[20rem] -right-[15rem] absolute font-bold max-2xl:text-xl 2xl:text-2xl  " >3D Artist</FloatingBoxes>
                         <FloatingBoxes className=" top-[16rem] z-50 -left-[16rem] absolute font-bold text-2xl " >Video Editor</FloatingBoxes>
                     </div>
@@ -117,7 +118,7 @@ export default function Intro(){
                                 <a href="https://github.com/Risav03" target="_blank"><FaGithub size={35} className= "fill-emerald-500  duration-300 hover:bg-emerald-400 hover:fill-black rounded-md"/></a>
                                 <a href="https://drive.google.com/file/d/19_0YKGBQg185Kc20vsr2mPCeA8ZNxmtn/view?usp=sharing" target="_blank" ><MdPictureAsPdf size={35} className= "fill-emerald-500  duration-300 hover:bg-emerald-400 hover:fill-black rounded-md"/></a>
                     </div>
-                    <Image unoptimized width={2160} height={2160} src={mypic} className="max-2xl:w-[40rem] 2xl:w-[45rem] brightness-90 z-[5]"/>
+                    <Image unoptimized width={2160} height={2160} src={mypic} className="max-2xl:w-[40rem] pointer-events-none 2xl:w-[45rem] brightness-90 z-[5]"/>
 
                     </div>
                 </div>

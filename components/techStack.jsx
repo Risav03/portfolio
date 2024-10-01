@@ -17,36 +17,36 @@ const arr = [
     {
         image: html,
         name: "HTML",
-        time: "38 months"
+        time: "58 months"
     },
     {
         image: css,
         name: "CSS",
-        time: "38 months"
+        time: "58 months"
     }, {
         image: js,
         name: "JavaScript",
-        time: "36 months"
+        time: "56 months"
     }, {
         image: rct,
         name: "ReactJs",
-        time: "34 months"
+        time: "54 months"
     }, {
         image: tailwind,
         name: "TailwindCSS",
-        time: "34 months"
+        time: "54 months"
     }, {
         image: next,
         name: "NextJs",
-        time: "32 months"
+        time: "52 months"
     }, {
         image: solidity,
         name: "Solidity",
-        time: "20 months"
+        time: "40 months"
     }, {
         image: ts,
         name: "TypeScript",
-        time: "10 months"
+        time: "38 months"
     },
     {
         image: blender,
