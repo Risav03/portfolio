@@ -116,7 +116,7 @@ export default function Intro(){
                                 <a href="https://www.linkedin.com/in/risavdeb-patra-703971227/" target="_blank" ><FaLinkedin size={35} className= "fill-emerald-500  duration-300 hover:bg-emerald-400 hover:fill-black rounded-md"/></a>
                                 <a href="https://www.instagram.com/__.r.i.j.u.__/" target="_blank" ><AiFillInstagram size={35} className= "fill-emerald-500  duration-300 hover:bg-emerald-400 hover:fill-black rounded-md"/></a>
                                 <a href="https://github.com/Risav03" target="_blank"><FaGithub size={35} className= "fill-emerald-500  duration-300 hover:bg-emerald-400 hover:fill-black rounded-md"/></a>
-                                <a href="https://drive.google.com/file/d/19_0YKGBQg185Kc20vsr2mPCeA8ZNxmtn/view?usp=sharing" target="_blank" ><MdPictureAsPdf size={35} className= "fill-emerald-500  duration-300 hover:bg-emerald-400 hover:fill-black rounded-md"/></a>
+                                <a href="https://drive.google.com/file/d/1oAT-NxI3XN4jrQE5_ei8461DBoZV5yqT/view?usp=sharing" target="_blank" ><MdPictureAsPdf size={35} className= "fill-emerald-500  duration-300 hover:bg-emerald-400 hover:fill-black rounded-md"/></a>
                     </div>
                     <Image unoptimized width={2160} height={2160} src={mypic} className="max-2xl:w-[40rem] pointer-events-none 2xl:w-[45rem] brightness-90 z-[5]"/>
 
