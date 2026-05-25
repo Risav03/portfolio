@@ -15,6 +15,7 @@ import godaddy from "@/assets/icons/godaddy.png"
 import postman from "@/assets/icons/postman.png"
 import peerlist from "@/assets/icons/peerlist.svg"
 import ts from "@/assets/icons/typescript.svg";
+import ethglobal from "@/assets/icons/ethglobal.svg";
 import Image from 'next/image'
 import { IoMdGlobe } from 'react-icons/io'
 import { FaEthereum, FaGithub } from 'react-icons/fa6'
@@ -39,10 +40,24 @@ const arr = [
         description: "AgentNet: A smart contract registry for on-chain agents. Built a libp2p communication layer enabling agent-to-agent coordination on the Ethereum network.",
         project: "AgentNet",
         tech: [<FaEthereum key="eth" />, <SiSolidity key="sol" />, <FaNodeJs key="node" />],
-        awards: [],
+        awards: [
+            { img: ethglobal, link: "/ETHGlobal_AgenticETH.pdf" },
+        ],
         link: "",
-        github: "",
+        github: "https://github.com/Risav03/AgentNet",
         date: "Jan '25 – Feb '25"
+    },
+    {
+        hackathon: "ETHGlobal Bangkok",
+        description: "Backpacker: A decentralized travel review platform leveraging Cartesi Rollups for on-chain federated ML model training, with NFT-based incentives for user-generated travel reviews.",
+        project: "Backpacker",
+        tech: [<FaEthereum key="eth" />, next, ts],
+        awards: [
+            { img: ethglobal, link: "/ETHGlobal_Bangkok.pdf" },
+        ],
+        link: "",
+        github: "https://github.com/Risav03/backpacker",
+        date: "Nov '24"
     },
     {
         hackathon: "HTM 3.0",
