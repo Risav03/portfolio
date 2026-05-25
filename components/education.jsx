@@ -5,7 +5,7 @@ import { IoMdGlobe } from 'react-icons/io'
 import { PiGraduationCap } from 'react-icons/pi'
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
-import { Badge } from './ui/badge'
+import { Badge } from './UI/badge'
 
 export const Education = () => {
   const ref = useRef(null)

@@ -22,7 +22,7 @@ import { FaEthereum, FaGithub } from 'react-icons/fa6'
 import { SiCoinbase, SiPostgresql, SiRedis, SiSolidity } from 'react-icons/si'
 import { FaNodeJs } from 'react-icons/fa'
 import { motion, useInView } from 'framer-motion'
-import { Badge } from './ui/badge'
+import { Badge } from './UI/badge'
 
 const arr = [
     {

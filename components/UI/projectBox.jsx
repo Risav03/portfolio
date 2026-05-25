@@ -4,7 +4,7 @@ import { IoMdGlobe } from 'react-icons/io'
 import { FaGithub, FaXTwitter } from 'react-icons/fa6'
 import Image from 'next/image'
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion'
-import { Badge } from '../ui/badge'
+import { Badge } from './badge'
 
 export const ProjectBox = ({ img, name, desc, link, tags, xHandle }) => {
   const ref = useRef(null)

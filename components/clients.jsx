@@ -3,7 +3,7 @@ import React, { useRef } from 'react'
 import { Heading } from './heading'
 import { FaXTwitter } from 'react-icons/fa6'
 import { motion, useInView } from 'framer-motion'
-import { Badge } from './ui/badge'
+import { Badge } from './UI/badge'
 
 const clientArr = [
   {
