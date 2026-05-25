@@ -406,7 +406,7 @@ export default function Intro() {
             </span>
           </div>
           <div className="text-base text-white/50 mt-3 flex items-center justify-center gap-1.5">
-            I build <TypingEffect />
+            I&apos;m a <TypingEffect />
           </div>
         </motion.div>
 
