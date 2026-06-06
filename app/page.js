@@ -2,6 +2,7 @@
 
 import { Background } from "@/components/background";
 import { Clients } from "@/components/clients";
+import { WorkingOn } from "@/components/workingOn";
 import { Education } from "@/components/education";
 import { Experience } from "@/components/experience";
 import { Footer } from "@/components/footer";
@@ -17,6 +18,7 @@ export default function Home() {
       <Background />
       <ScrollProgress />
       <Intro />
+      <WorkingOn />
       <Clients />
       <Education />
       <Experience />
