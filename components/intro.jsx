@@ -73,7 +73,7 @@ const socialLinks = [
   { href: "https://www.instagram.com/__.r.i.j.u.__/", icon: <AiFillInstagram size={20} /> },
   { href: "https://github.com/Risav03",    icon: <FaGithub size={20} /> },
   { href: "https://t.me/degeneer03",       icon: <FaTelegramPlane size={20} /> },
-  { href: "https://drive.google.com/file/d/1epkUvvFBT3PB5haj46Zd_46VvsIGWSwT/view?usp=sharing", icon: <MdPictureAsPdf size={20} /> },
+  { href: "https://drive.google.com/file/d/1TvAPXTabDSGucPBpYWGekhJ97z-vV11e/view?usp=sharing", icon: <MdPictureAsPdf size={20} /> },
 ]
 
 const tags = ["Freelancer", "Web Developer", "Web3 Developer", "3D Artist", "Video Editor", "AI Workflows", "Leadership", "Graphic Design"]
@@ -137,20 +137,20 @@ const terminalLines = [
   { type: 'blank' },
   { type: 'prompt', text: 'whoami' },
   { type: 'out',    text: 'Risavdeb Patra  ·  @Degeneer03', color: 'text-cyan-300' },
-  { type: 'out',    text: 'Full Stack  ·  Web3  ·  AI', color: 'text-blue-300/60' },
+  { type: 'out',    text: 'Full Stack  ·  AI  ·  Web3', color: 'text-blue-300/60' },
   { type: 'blank' },
   { type: 'prompt', text: 'cat stats.json' },
   { type: 'out',    text: '{', color: 'text-blue-200/50' },
   { type: 'out',    text: '  "experience":  "3+ years",', color: 'text-blue-200/50' },
-  { type: 'out',    text: '  "shipped":     11,', color: 'text-blue-200/50' },
-  { type: 'out',    text: '  "rate":        "$2,500 / month",', color: 'text-blue-200/50' },
+  { type: 'out',    text: '  "now":         "Cinnamon @ HoE",', color: 'text-blue-200/50' },
+  { type: 'out',    text: '  "shipped":     13,', color: 'text-blue-200/50' },
   { type: 'out',    text: '  "timezone":    "IST +5:30"', color: 'text-blue-200/50' },
   { type: 'out',    text: '}', color: 'text-blue-200/50' },
 ]
 
 const metrics = [
   { value: "4+",   label: "yrs exp",    cls: "top-[12%] left-[4%]",   border: "border-cyan-500/25",   val: "text-cyan-400",   floatY: [-7, 0], dur: 3.6, delay: 1.3 },
-  { value: "11+",  label: "shipped",    cls: "top-[18%] right-[4%]",  border: "border-blue-500/25",   val: "text-blue-400",   floatY: [0, -9], dur: 4.1, delay: 1.6 },
+  { value: "13+",  label: "shipped",    cls: "top-[18%] right-[4%]",  border: "border-blue-500/25",   val: "text-blue-400",   floatY: [0, -9], dur: 4.1, delay: 1.6 },
 
   { value: "◉",   label: "open to hire", cls: "bottom-[14%] left-[6%]", border: "border-green-500/25",  val: "text-green-400",  floatY: [0, -6], dur: 3.9, delay: 2.2 },
 ]
@@ -283,7 +283,7 @@ export default function Intro() {
             transition={{ delay: 0.25, duration: 0.6, type: "spring" }}
           >
             <p className="text-blue-400/40 text-xs font-mono tracking-[0.35em] uppercase mb-2">
-              Full Stack + Web3 Developer
+              Full Stack · AI · Web3
             </p>
             <h1 className="text-[4.2rem] xl:text-[5rem] font-black tracking-tight text-white leading-[1.0] drop-shadow-lg">
               Risavdeb Patra
@@ -397,7 +397,7 @@ export default function Intro() {
           transition={{ delay: 0.4 }}
           className="text-center"
         >
-          <p className="text-blue-400/40 text-[10px] font-mono tracking-widest uppercase mb-2">Full Stack + Web3</p>
+          <p className="text-blue-400/40 text-[10px] font-mono tracking-widest uppercase mb-2">Full Stack · AI · Web3</p>
           <h1 className="text-4xl font-black text-white leading-tight">Risavdeb Patra</h1>
           <div className="flex items-center justify-center gap-2 mt-1.5">
             <span className="text-white/15 text-base font-light">/</span>

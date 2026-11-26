@@ -1,16 +1,14 @@
 "use client"
 import React, { useRef } from 'react'
 import { Heading } from './heading'
-import { FaXTwitter } from 'react-icons/fa6'
 import { motion, useInView } from 'framer-motion'
 
 const projects = [
   {
-    name: "BasemateAgent",
-    handle: "basemateagent",
-    url: "https://x.com/basemateagent",
-    collab: "0xteo",
-    collabUrl: "https://x.com/0xteo",
+    name: "Cinnamon",
+    org: "House of Edtech",
+    summary: "Multi-tenant AI student support across web chat, an LMS widget, WhatsApp, and Telegram.",
+    detail: "Conversation agent on Cloudflare Durable Objects, with tool use, human handoff, and write-behind sync to PlanetScale Postgres.",
     start: "May '26",
     end: "Present",
   },
@@ -52,18 +50,12 @@ function WorkingOnCard({ project, index }) {
 
       <div className="flex max-md:flex-col items-center gap-8 p-6 md:p-8">
 
-        {/* Project avatar + name */}
+        {/* Project mark + name */}
         <div className="flex items-center gap-4 shrink-0">
           <div className="relative">
-            <div className="w-16 h-16 rounded-2xl overflow-hidden border border-cyan-500/25 bg-cyan-500/10 shrink-0">
-              <img
-                src={`https://unavatar.io/x/${project.handle}`}
-                alt={project.name}
-                className="w-full h-full object-cover"
-                onError={(e) => { e.target.style.display = 'none' }}
-              />
+            <div className="w-16 h-16 rounded-2xl border border-cyan-500/25 bg-cyan-500/10 shrink-0 flex items-center justify-center text-cyan-300 font-black text-2xl">
+              C
             </div>
-            {/* Pulsing ring */}
             <motion.div
               className="absolute inset-[-4px] rounded-2xl border border-cyan-400/30"
               animate={{ opacity: [0.3, 0.7, 0.3], scale: [1, 1.04, 1] }}
@@ -74,13 +66,9 @@ function WorkingOnCard({ project, index }) {
           <div className="text-left">
             <p className="text-cyan-400/50 text-[10px] font-mono tracking-[0.3em] uppercase mb-1">Current Build</p>
             <h3 className="text-white font-black text-2xl md:text-3xl leading-none">{project.name}</h3>
-            <a
-              href={project.url}
-              target="_blank"
-              className="inline-flex items-center gap-1 text-xs text-cyan-400/50 hover:text-cyan-400 border border-cyan-500/20 rounded-md px-2 py-0.5 mt-1.5 transition-colors"
-            >
-              <FaXTwitter size={10} />@{project.handle}
-            </a>
+            <span className="inline-flex items-center text-xs text-cyan-400/60 border border-cyan-500/20 rounded-md px-2 py-0.5 mt-1.5">
+              {project.org}
+            </span>
           </div>
         </div>
 
@@ -88,34 +76,9 @@ function WorkingOnCard({ project, index }) {
         <div className="hidden md:block h-16 w-px bg-gradient-to-b from-transparent via-cyan-500/20 to-transparent shrink-0" />
         <div className="md:hidden w-full h-px bg-gradient-to-r from-transparent via-cyan-500/20 to-transparent" />
 
-        {/* Collaborating with */}
-        <div className="flex items-center gap-3 shrink-0">
-          <div className="text-left">
-            <p className="text-blue-400/35 text-[10px] font-mono tracking-[0.3em] uppercase mb-2">Collaborating with</p>
-            <a
-              href={project.collabUrl}
-              target="_blank"
-              className="flex items-center gap-2.5 group/collab"
-            >
-              <div className="w-10 h-10 rounded-full overflow-hidden border border-blue-500/25 bg-blue-500/10 shrink-0">
-                <img
-                  src={`https://unavatar.io/x/${project.collab}`}
-                  alt={project.collab}
-                  className="w-full h-full object-cover"
-                  onError={(e) => { e.target.style.display = 'none' }}
-                />
-              </div>
-              <div>
-                <span className="text-white/70 font-semibold text-sm group-hover/collab:text-white transition-colors">
-                  @{project.collab}
-                </span>
-                <div className="flex items-center gap-1 mt-0.5">
-                  <FaXTwitter size={9} className="text-blue-400/40" />
-                  <span className="text-blue-400/30 text-[10px]">on X</span>
-                </div>
-              </div>
-            </a>
-          </div>
+        <div className="text-left max-w-md">
+          <p className="text-sm text-blue-100/70 leading-relaxed">{project.summary}</p>
+          <p className="text-xs text-blue-100/40 leading-relaxed mt-2">{project.detail}</p>
         </div>
 
         {/* Spacer */}
@@ -151,7 +114,7 @@ export const WorkingOn = () => {
       <Heading>Working On</Heading>
       <div className='w-[90%] max-w-4xl flex flex-col gap-4'>
         {projects.map((project, idx) => (
-          <WorkingOnCard key={project.handle} project={project} index={idx} />
+          <WorkingOnCard key={project.name} project={project} index={idx} />
         ))}
       </div>
     </div>

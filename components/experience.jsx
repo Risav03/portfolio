@@ -7,15 +7,28 @@ import { Badge } from './UI/badge'
 
 const experiences = [
   {
+    company: "House of Edtech",
+    role: "Fullstack Developer",
+    type: "Full-time",
+    start: "May '26",
+    end: "Present",
+    bullets: [
+      "Built Cinnamon, a multi-tenant AI student-support platform for web chat, an LMS widget, WhatsApp, and Telegram",
+      "Implemented the conversation agent on Cloudflare Durable Objects, with tool use, human handoff, and write-behind sync to PlanetScale Postgres",
+      "Shipped it on TypeScript, Bun, Turborepo, Hono, Workers AI, the Vercel AI SDK, Drizzle, Better Auth, Next.js, and Svelte 5",
+    ],
+    tags: ["Cinnamon", "Durable Objects", "AI"],
+  },
+  {
     company: "Topi Contract",
     role: "Fullstack Developer",
     type: "Remote Freelancing",
     start: "Dec '25",
     end: "May '26",
     bullets: [
-      "Collaborated with clients across the United States and Europe under a $2,500/month retainer",
-      "Responsible for end-to-end development tasks, bug resolution, and evolving customer requirements",
-      "Delivered full stack solutions spanning Web3 protocols, LMS infrastructure, and AI-powered tooling",
+      "Worked with US and European clients on a $2,500/month contract as their personal developer",
+      "Handled development requirements, bug fixes, and customer requests end to end",
+      "Delivered full stack work across Web3 protocols, LMS infrastructure, and AI-powered tooling",
     ],
     tags: ["Web3", "AI", "Full Stack"],
   },
@@ -26,11 +39,11 @@ const experiences = [
     start: "Nov '24",
     end: "Nov '25",
     bullets: [
-      "Designed and developed a scalable multi-tenant backend architecture for an LMS serving 100k+ monthly users",
-      "Joined mid-development and helped achieve key milestones, enabling the LMS launch within two months",
-      "Optimized database schemas and query performance; refined UI to improve usability",
+      "Joined mid-development and helped hit the milestones that launched the LMS within two months",
+      "Built the multi-tenant backend for 100k+ monthly users, plus customer and operations platforms",
+      "Worked with operations and support to fix bugs, speed up queries, and refocus the UI",
     ],
-    tags: ["LMS", "Backend", "Postgres"],
+    tags: ["LMS", "Postgres", "Multi-tenant"],
   },
   {
     company: "3xBuilds",
@@ -76,11 +89,12 @@ const experiences = [
 ]
 
 const accents = [
+  { dot: 'bg-cyan-400',    dotRing: 'border-cyan-400',    cardBorder: 'border-l-cyan-400/70',    roleText: 'text-cyan-400' },
   { dot: 'bg-blue-400',    dotRing: 'border-blue-400',    cardBorder: 'border-l-blue-500/50',    roleText: 'text-blue-400' },
-  { dot: 'bg-cyan-400',    dotRing: 'border-cyan-400',    cardBorder: 'border-l-cyan-500/50',    roleText: 'text-cyan-400' },
   { dot: 'bg-indigo-400',  dotRing: 'border-indigo-400',  cardBorder: 'border-l-indigo-500/50',  roleText: 'text-indigo-400' },
-  { dot: 'bg-blue-300',    dotRing: 'border-blue-300/50', cardBorder: 'border-l-blue-400/25',    roleText: 'text-blue-300/60' },
+  { dot: 'bg-blue-300',    dotRing: 'border-blue-300/50', cardBorder: 'border-l-blue-400/30',    roleText: 'text-blue-300/70' },
   { dot: 'bg-slate-400',   dotRing: 'border-slate-400/50',cardBorder: 'border-l-slate-500/25',   roleText: 'text-slate-400/60' },
+  { dot: 'bg-slate-500',   dotRing: 'border-slate-500/40',cardBorder: 'border-l-slate-500/20',   roleText: 'text-slate-400/50' },
 ]
 
 function TimelineEntry({ exp, index, lineInView }) {
@@ -180,7 +194,7 @@ export const Experience = () => {
           />
 
           {experiences.map((exp, i) => (
-            <TimelineEntry key={exp.company} exp={exp} index={i} lineInView={inView} />
+            <TimelineEntry key={`${exp.company}-${exp.start}`} exp={exp} index={i} lineInView={inView} />
           ))}
         </div>
       </div>

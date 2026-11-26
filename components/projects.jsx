@@ -15,6 +15,18 @@ import { motion } from 'framer-motion'
 export const Projects = () => {
     const arr = [
         {
+            name: "Cinnamon",
+            img: null,
+            tags: ["Durable Objects", "Svelte 5", "AI SDK", "Drizzle"],
+            desc: "Multi-tenant AI student support for web chat, an LMS widget, WhatsApp, and Telegram. The agent runs on Cloudflare Durable Objects with tool use, human handoff, and write-behind sync to PlanetScale.",
+        },
+        {
+            name: "Learning Management System",
+            img: null,
+            tags: ["Multi-tenant", "Tailwind", "Shadcn", "Postgres"],
+            desc: "LMS for 100k+ monthly users. Multi-tenant backend with customer and operations platforms that stay in sync.",
+        },
+        {
             name: "namdotxyz",
             img: null,
             xHandle: "namdotxyz",

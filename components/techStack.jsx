@@ -14,7 +14,7 @@ import tailwind from "@/assets/icons/tailwind-css.svg";
 import {
     SiRedis, SiPostgresql, SiDocker, SiMongodb, SiGraphql,
     SiCloudflare, SiFirebase, SiExpo, SiBun, SiPrisma, SiStripe,
-    SiOpenai, SiVercel,
+    SiOpenai, SiVercel, SiSvelte, SiHono, SiDrizzle, SiTurborepo,
 } from "react-icons/si";
 import { FaNodeJs, FaAws, FaPython } from "react-icons/fa";
 import { MdOutlineQueue } from "react-icons/md";
@@ -38,10 +38,14 @@ const arr = [
     { icon: <SiDocker />,     name: "Docker",         time: "16 months" },
     { icon: <SiRedis />,      name: "Redis",          time: "10 months" },
     { icon: <MdOutlineQueue />, name: "BullMQ",       time: "8 months" },
-    { icon: <SiCloudflare />, name: "CDN / CF",       time: "8 months" },
+    { icon: <SiCloudflare />, name: "CF Workers",     time: "8 months" },
     { icon: <SiGraphql />,    name: "GraphQL",        time: "8 months" },
     { icon: <SiFirebase />,   name: "Firebase",       time: "10 months" },
     { icon: <SiBun />,        name: "Elysia / Bun",  time: "8 months" },
+    { icon: <SiHono />,       name: "Hono",          time: "6 months" },
+    { icon: <SiSvelte />,     name: "Svelte 5",      time: "6 months" },
+    { icon: <SiDrizzle />,    name: "Drizzle",       time: "6 months" },
+    { icon: <SiTurborepo />,  name: "Turborepo",     time: "6 months" },
     { icon: <SiExpo />,       name: "Expo",           time: "6 months" },
     { icon: <SiPrisma />,     name: "Prisma",         time: "10 months" },
     { icon: <SiStripe />,     name: "Stripe",         time: "8 months" },

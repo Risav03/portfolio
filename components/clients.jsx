@@ -17,16 +17,15 @@ const clientArr = [
     type: "Contract",
     rate: "$2,500",
     rateSuffix: "/ month",
-    duration: "2 months so far",
+    duration: "12 months",
     start: "May '25",
-    end: "Present",
+    end: "May '26",
     bullets: [
-      "Building and maintaining the full stack infrastructure for namdotxyz",
-      "Designing scalable backend systems with PostgreSQL and Redis",
-      "Implementing AI-powered workflow automation features",
+      "Built and maintained the full stack infrastructure for namdotxyz",
+      "Designed scalable backend systems with PostgreSQL and Redis",
+      "Implemented AI-powered workflow automation features",
     ],
     tags: ["PostgreSQL", "Redis", "AI", "Next.js"],
-    featured: true,
   },
   {
     contact: "BaseJunkie",
@@ -271,17 +270,20 @@ function CompactCard({ client, index }) {
 }
 
 export const Clients = () => {
+  const active = clientArr.filter((client) => client.end === "Present")
+  const past = clientArr.filter((client) => client.end !== "Present")
+
   return (
     <div className='w-screen flex flex-col items-center text-center -translate-x-4 md:-translate-x-16 mt-24'>
       <Heading>Clients</Heading>
       <div className='w-[90%] max-w-4xl flex flex-col gap-5'>
-        {/* Featured active client */}
-        <FeaturedCard client={clientArr[0]} />
+        {active.map((client) => (
+          <FeaturedCard key={client.organization} client={client} />
+        ))}
 
-        {/* Past clients grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {clientArr.slice(1).map((client, idx) => (
-            <CompactCard key={idx} client={client} index={idx} />
+          {past.map((client, idx) => (
+            <CompactCard key={client.organization} client={client} index={idx} />
           ))}
         </div>
       </div>

@@ -29,11 +29,12 @@ export const ProjectBox = ({ img, name, desc, link, tags, xHandle }) => {
     setHovered(false)
   }
 
+  const Card = link ? motion.a : motion.div
+
   return (
-    <motion.a
+    <Card
       ref={ref}
-      href={link}
-      target='_blank'
+      {...(link ? { href: link, target: '_blank' } : {})}
       style={{ rotateX, rotateY, transformPerspective: 800 }}
       onMouseMove={handleMouseMove}
       onMouseEnter={() => setHovered(true)}
@@ -42,7 +43,7 @@ export const ProjectBox = ({ img, name, desc, link, tags, xHandle }) => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-40px" }}
       transition={{ duration: 0.5, type: "spring" }}
-      className='relative flex flex-col md:w-[22rem] w-[90%] rounded-2xl overflow-hidden border border-blue-500/20 bg-white/[0.02] backdrop-blur-sm group cursor-pointer'
+      className={`relative flex flex-col md:w-[22rem] w-[90%] rounded-2xl overflow-hidden border border-blue-500/20 bg-white/[0.02] backdrop-blur-sm group ${link ? 'cursor-pointer' : 'cursor-default'}`}
     >
       {/* Image / placeholder */}
       <div className='relative h-44 overflow-hidden'>
@@ -65,7 +66,9 @@ export const ProjectBox = ({ img, name, desc, link, tags, xHandle }) => {
             </div>
           </div>
         ) : (
-          <div className='w-full h-full bg-gradient-to-br from-blue-950 to-[#020817]' />
+          <div className='w-full h-full bg-gradient-to-br from-blue-950 via-[#061428] to-[#020817] flex items-center justify-center px-6'>
+            <span className='text-2xl font-black tracking-tight text-blue-300/35 text-center'>{name}</span>
+          </div>
         )}
 
         {/* Shimmer on hover */}
@@ -111,6 +114,6 @@ export const ProjectBox = ({ img, name, desc, link, tags, xHandle }) => {
 
       {/* Corner accent */}
       <div className='absolute top-0 right-0 w-16 h-16 bg-blue-500/5 blur-2xl rounded-full pointer-events-none' />
-    </motion.a>
+    </Card>
   )
 }

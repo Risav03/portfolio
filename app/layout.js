@@ -7,7 +7,7 @@ const jetbrainsMono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mon
 
 export const metadata = {
   title: "Risavdeb Patra",
-  description: "Freelance Full Stack & Web3 Developer specialising in scalable backend systems, AI workflow automation, and graphic design. Explore my portfolio.",
+  description: "Full stack developer building multi-tenant AI products, LMS platforms, and Web3 apps. Currently at House of Edtech on Cinnamon.",
 };
 
 export default function RootLayout({ children }) {

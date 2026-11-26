@@ -86,7 +86,7 @@ export const Footer = () => {
                     className='flex flex-col items-center gap-1 mt-4'
                 >
                     <p className='text-xs font-mono text-blue-400/30'>
-                        © 2025 Risavdeb Patra · Built with Next.js + Framer Motion
+                        © 2026 Risavdeb Patra · Built with Next.js + Framer Motion
                     </p>
                 </motion.div>
             </div>
