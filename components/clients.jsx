@@ -7,6 +7,23 @@ import { Badge } from './UI/badge'
 
 const clientArr = [
   {
+    contact: "Mateo",
+    contactHandle: "0xteo",
+    contactUrl: "https://x.com/0xteo",
+    organization: "Basemate",
+    orgHandle: "basemateagent",
+    orgUrl: "https://x.com/basemateagent",
+    role: "Full Stack Developer",
+    type: "Contract",
+    duration: "3 months",
+    start: "Jul '26",
+    end: "Oct '26",
+    bullets: [
+      "Contract development with Mateo on Basemate",
+    ],
+    tags: ["Full Stack"],
+  },
+  {
     contact: "Sang W Nam",
     contactHandle: "sangwnam71",
     contactUrl: "https://x.com/sangwnam71",
@@ -17,9 +34,9 @@ const clientArr = [
     type: "Contract",
     rate: "$2,500",
     rateSuffix: "/ month",
-    duration: "12 months",
-    start: "May '25",
-    end: "May '26",
+    duration: "2 months",
+    start: "May '26",
+    end: "Jul '26",
     bullets: [
       "Built and maintained the full stack infrastructure for namdotxyz",
       "Designed scalable backend systems with PostgreSQL and Redis",
@@ -39,8 +56,8 @@ const clientArr = [
     rate: "$1,250",
     rateSuffix: "/ month",
     duration: "6 months",
-    start: "Nov '24",
-    end: "May '25",
+    start: "Nov '25",
+    end: "May '26",
     bullets: [
       "Built Fireside Base — a community platform built on Base chain",
       "Developed social features, on-chain interactions, and token mechanics",
@@ -60,8 +77,8 @@ const clientArr = [
     rate: "$1,250",
     rateSuffix: "/ month",
     duration: "6 months",
-    start: "Nov '24",
-    end: "May '25",
+    start: "Nov '25",
+    end: "May '26",
     bullets: [
       "Built House Protocol — a Web3 protocol interface on Base",
       "Integrated smart contracts with a polished dApp frontend",
@@ -254,8 +271,12 @@ function CompactCard({ client, index }) {
         {/* Rate + duration + dates */}
         <div className="flex items-center justify-between pt-3 border-t border-blue-500/10">
           <div>
-            <span className="text-white/60 font-bold text-base font-mono">{client.rate}</span>
-            <span className="text-blue-400/35 text-xs font-mono"> {client.rateSuffix}</span>
+            {client.rate && (
+              <>
+                <span className="text-white/60 font-bold text-base font-mono">{client.rate}</span>
+                <span className="text-blue-400/35 text-xs font-mono"> {client.rateSuffix}</span>
+              </>
+            )}
             <div className="text-blue-400/30 text-[10px] mt-0.5">{client.duration}</div>
           </div>
           <div className="flex items-center gap-1.5 font-mono text-xs">
